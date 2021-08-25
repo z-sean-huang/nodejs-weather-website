@@ -1,7 +1,7 @@
 # nodejs-weather-website
 current weather query service based on node.js
 
-Please visit https://hzhishen9-nodejs-weather-app.herokuapp.com/ to see the demo website.
+Please visit https://hzhishen9-nodejs-weather-app.herokuapp.com/ (host on Heroku) to see the demo website.
 
 dependent APIs:
 
