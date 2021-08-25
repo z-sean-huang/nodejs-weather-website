@@ -20,8 +20,10 @@ weatherForm.addEventListener("submit", (e) => {
                 msg01.textContent = "Please input a correct location"
                 return
             }
-            msg01.textContent = data.location
-            msg02.textContent = JSON.stringify(data.forecast)
+            const weather = data.forecast.weather_desc
+            const temp = data.forecast.temp
+            msg01.textContent = `location: ${data.location}`
+            msg02.textContent = `current weather=[${weather}], temperature=[${temp}]`
         })
     })
 
