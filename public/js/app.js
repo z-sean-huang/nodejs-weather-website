@@ -22,8 +22,10 @@ weatherForm.addEventListener("submit", (e) => {
             }
             const weather = data.forecast.weather_desc
             const temp = data.forecast.temp
+            const feelslike = data.forecast.feelslike
+            const hum = data.forecast.humidity
             msg01.textContent = `location: ${data.location}`
-            msg02.textContent = `current weather=[${weather}], temperature=[${temp}]`
+            msg02.textContent = `current weather=[${weather}], temperature=[${temp}], feels like=[${feelslike}], humidity=[${hum}]`
         })
     })
 

@@ -13,11 +13,11 @@ const forecast = (lat, long, callback) => {
             callback(s, undefined)
         } else {
             const cur = body.current
-            // console.log(`${cur.weather_descriptions[0]}. It is currently ${cur.temperature} degress out It feels like ${cur.feelslike} degress`)
             data = {
                 weather_desc: cur.weather_descriptions[0], 
                 temp: cur.temperature,
                 feelslike: cur.feelslike,
+                humidity: cur.humidity,
             }
             callback(undefined, data)
         }
